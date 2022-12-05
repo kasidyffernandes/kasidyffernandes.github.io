@@ -297,9 +297,9 @@ class HeatMap {
           .attr("stroke", "black");
       })
       .on("mousemove", function (d) {
-        Tooltip.style("top", d.pageY - 10 + "px").style(
+        Tooltip.style("top", d.pageY + 210 + "px").style(
           "left",
-          d.pageX + 10 + "px"
+          d.pageX + 50 + "px"
         );
       })
       .on("mouseout", function (d, i) {
