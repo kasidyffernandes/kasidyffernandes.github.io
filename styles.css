@@ -1,0 +1,193 @@
+.wrapper {
+      font-family: sans-serif;
+    width: 100%;
+    height: 100%;
+  }
+  
+#one, #two, #three, #four {
+    /*border: 1px dashed red;
+    box-sizing: border-box;*/
+    float: left;
+}
+  
+#one {
+      height: 50%;
+      width: 50%;
+}
+ #two {
+      height: 50%;
+      width: 50%;
+}
+#three {
+      height: 50%;
+      width: 50%;
+}
+#four {
+      height: 50%;
+      width: 50%;
+}
+
+#heatmap{
+    display:flex;
+    justify-content: center;
+
+}
+
+tr:nth-of-type(2n){
+      background-color: #6699cc8b
+}
+
+
+.title{
+      font-size: 22px;
+      font-weight: bold;
+      text-anchor: middle;
+}
+.legend{
+      font-size: 16px;
+      text-anchor: middle;
+}
+.reset{
+      font-size: 10.5px;
+      text-anchor: middle;
+      fill: red;
+      font-weight: bold;
+}
+.header {
+      fill: lightgrey;
+      stroke: #fff;
+      stroke-width: 2px;
+      cursor: pointer;
+    }
+    
+.header-text {
+      font-size: 18px;
+      text-anchor: middle;
+      font-weight: 700;
+}
+.spotify-text {
+      color: #ac87ff;
+}
+.tiktok-text {
+      color: #69b3a2;
+}
+
+.attribute-text {
+      color: #69b3a2;
+}
+
+.discrete-text {
+      color: #6987b3;
+}
+
+.ctooltip{
+      position: absolute; 
+      height: 200px;
+      width: 200px;
+      fill: white;
+      visibility: hidden;
+}
+.tooltip{
+      position: absolute;
+      text-align: center;
+      min-width: 50px;
+      min-height: 28px;
+      padding: 5px;
+      font: 16px sans-serif;  
+      background: rgba(241, 241, 241, 0.9);
+      stroke: gray;
+      border-radius: 8px;
+      pointer-events: none;
+}
+#tooltiptext{
+      position: absolute;
+      text-anchor: middle;
+      text-align: center;
+      width: 300px;
+      visibility: hidden;
+      fill: black
+      
+}
+
+.header-text {
+      font: 18px sans-serif;
+}
+
+.infotip {                 
+      position: absolute;    
+      text-align: center;     
+      width: 400px;             
+      height: 428px;                
+      padding: 2px;                  
+      font: 12px sans-serif;  
+      border: 0px;                   
+      border-radius: 8px;        
+      pointer-events: none;  
+      visibility: visible;
+      background-color: lightgray;        
+  }
+        
+.ldiv{
+      display: flex;
+      align-items:left; 
+      position: relative;
+      width: 500px;
+      font: 18px sans-serif;   
+      background: rgb(194, 194, 194); 
+      border: 0px;   
+}
+
+.songtip{
+      float: right;
+}
+.listTrack{
+   
+     vertical-align: center;
+     flex-wrap: wrap;
+     padding-left: 10px;
+     margin-top:-5px;
+   
+}
+
+.listImage{ 
+      display: flex;
+      align-items:left;
+    
+}
+
+p {
+      margin-top:-10px;
+  }
+
+.btn-bgstroke {
+      font-size: 20px;
+      display: inline-block;
+      border: 1px solid white;
+      padding: 10px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: 300;
+      margin-top: 10px; 
+
+}
+
+.btn-bgstroke:hover {
+      background-color: white;
+      color: #33cccc;
+}
+.header {
+      width: 100%;
+      text-align: center;
+     
+
+}
+.pagetitle{
+      font-size: 2.5em;
+      font-family: sans-serif;
+      font-weight: 600;
+      letter-spacing: 5px;
+}
+.subtitle{
+      font-size: 1.1em;
+      font-weight: 100;
+}

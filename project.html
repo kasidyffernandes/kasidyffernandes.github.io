@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body style="background-color:rgba(240, 240, 240, 0.624)">
+    <div id="header" style="font-family:sans-serif;">
+        <section class='header'>
+            <h1 class='pagetitle'>2022 Song Explorer</h1>
+            <h2 class="subtitle" style="text-align:center;">Explore audio charateristics of the top songs from <span class=spotify-text> Spotify </span> and <span class=tiktok-text>TikTok</span></h2>
+            <a class="btn-bgstroke" href="FinalProcessBook.pdf" target="_blank">Process Book</a>
+            <a class="btn-bgstroke" href="https://www.youtube.com/watch?v=F2Yyh1KGpdY">Demo Video</a>
+        </section>
+    </div>
+    <div>Select song attribue here:</div>
+    <select name="yAxis" id="yAxis">
+        <option value="acousticness">Acoustincness</option>
+        <option value="danceability">Danceability</option>
+        <option value="energy">Energy</option>
+        <option value="instrumentalness">Instumentalness</option>
+        <option value="liveness">Liveness</option>
+        <option value="speechiness">Speechiness</option>
+        <option value="valence">Valence</option>
+        <option value="bpm" selected>BPM </option>
+        <option value="loudness">Loudness</option>
+        <option value="duration_ms">Duration</option>
+    </select>
+    <div class="wrapper">
+        <div id="one">
+    
+        </div>
+        <div id="two">
+            <input type='checkbox' id='toggle' checked/>
+            <label>Dual</label>
+        </div>
+        <div id="three">
+            <p>Heatmap of attributes for the Top 25 song in the current selection.  Arranged by sorting order from the table. <br> <span class="attribute-text">Attributes in green</span> are values from 0-1 and are determined from the analysis of the songs themselves <br> while the <span class="discrete-text">discrete values in blue</span> include the bpm, loudness in dB and song length.</p>
+            <div id="heatmap"></div>
+        </div>
+        
+        <div id="four" style="width: 790; height: 700; overflow:auto;">
+            <!-- <div id="songplayer" style="width: 100px; height: 100px;"> </div> -->
+            <h3 style="text-align:center">Song Details and Sorting</h3>
+           <div  style="width: 800px; height: 550px; overflow:auto;"> 
+            <table id='table'>
+                <tbody id='tbody'></tbody>
+            </table>
+           </div>
+            
+        </div>
+      </div>
+
+      <script src="js/main.js"></script>
+      <script src="js/list.js"></script>
+      <script src="js/heatmap.js"></script> 
+      <script src="js/camelot.js"></script>
+      <script src="js/script.js"></script>
+
+</body>
+</html>
